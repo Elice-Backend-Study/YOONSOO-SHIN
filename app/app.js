@@ -12,6 +12,7 @@ const home = require('./src/routes/home');
 // 앱 세팅
 app.set('views', './src/views'); // views 경로지정
 app.set('view engine', 'ejs');
+// eslint-disable-next-line no-undef
 app.use(express.static(`${__dirname}/src/public`))
 // __dirname: app.js가 있는 위치
 
