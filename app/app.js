@@ -12,7 +12,8 @@ const home = require('./src/routes/home');
 // 앱 세팅
 app.set('views', './src/views'); // views 경로지정
 app.set('view engine', 'ejs');
-
+app.use(express.static(`${__dirname}/src/public`))
+// __dirname: app.js가 있는 위치
 
 app.use("/", home); // user -> 미들웨어를 등록해주는 메서드
 
