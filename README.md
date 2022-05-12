@@ -17,3 +17,7 @@
 
 ![](https://velog.velcdn.com/images/chss3339/post/ba75d6f4-0836-4b76-852c-83b11a65334b/image.png)
 ![](https://velog.velcdn.com/images/chss3339/post/bc6df48d-de83-416f-b7b3-c7a994153161/image.png)
+
+<h2>File DB</h2>
+
+![](https://velog.velcdn.com/images/chss3339/post/3527a40e-e7b8-47cc-9e62-45acaa22f325/image.png)
