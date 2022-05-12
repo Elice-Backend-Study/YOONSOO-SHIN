@@ -21,6 +21,11 @@ const process = {
         const response = user.login();
         return res.json(response);
     },
+    register: (req, res) => {
+        const user = new User(req.body);
+        const response = user.register();
+        return res.json(response);
+    }
 }
 
 // {key : key} key만 넣으면 value가 key와 같게 자동으로 설정됨
