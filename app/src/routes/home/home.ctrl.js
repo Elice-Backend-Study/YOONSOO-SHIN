@@ -2,7 +2,7 @@
 
 const User = require("../../models/User");
 
-const output = {
+const output = { // get
     home: (req, res) => {
         res.render('home/index');
     },
@@ -15,7 +15,7 @@ const output = {
     }
 };
 
-const process = {
+const process = { // post
     login: async (req, res) => {
         const user = new User(req.body);
         const response = await user.login();
