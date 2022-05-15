@@ -28,7 +28,7 @@ app.use("/", home); // use -> 미들웨어를 등록해주는 메서드 1
 
 module.exports = app;
 
-// morgan 설정
+// morgan 설정a
 // const morgan = require('morgan');
 // const accessLogStream = require('./src/config/log');
 // app.use(morgan("dev"));
