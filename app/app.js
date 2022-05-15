@@ -13,10 +13,6 @@ dotenv.config();
 // 라우팅
 const home = require('./src/routes/home');
 
-const logger = require("./src/config/logger");
-logger.error("HEllo");
-
-
 // 앱 세팅
 app.set('views', './src/views'); // views 경로지정
 app.set('view engine', 'ejs');
