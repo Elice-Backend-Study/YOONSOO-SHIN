@@ -4,7 +4,8 @@
 const express = require('express');
 const bodyParser = require("body-parser");
 const dotenv = require("dotenv");
-
+const morgan = require('morgan');
+const logger = require('./src/config/logger');
 const app = express();
 dotenv.config();
 // html로 작성하여 화면에 띄우려면 라우터나 컨트롤러 쪽에서 html을 읽은 후에 바디에 실어서 클라이언트에게 넘겨줘야 하는 번거로운 작업이 필요하지만, ejs로 하면 바로 렌더링 할 수 있다.
@@ -21,7 +22,7 @@ app.use(express.static(`${__dirname}/src/public`)) // 정적파일을 보관하�
 app.use(bodyParser.json());
 // URL을 통해 전달되는 데이터에 한글, 공백 등과 같은 문자가 포함될 경우 제대로 인식되지 않는 문제 해결
 app.use(bodyParser.urlencoded({extended: true}));
-
+app.use(morgan('tiny', {stream: logger.stream}));
 
 app.use("/", home); // use -> 미들웨어를 등록해주는 메서드 1
 
